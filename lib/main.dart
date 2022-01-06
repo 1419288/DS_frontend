@@ -1,0 +1,22 @@
+import 'package:flutter/material.dart';
+import 'package:timetracker/activity_screen.dart';
+import 'package:timetracker/tree.dart';
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  
+ // This widget is the root of your application.
+ @override
+ Widget build(BuildContext context) {
+  return MaterialApp(
+   title: 'TimeTracker',
+   theme: ThemeData(
+    primarySwatch: Colors.blue,
+    textTheme: TextTheme(
+            subtitle1: TextStyle(fontSize: 20.0),
+            bodyText2: TextStyle(fontSize: 20.0)),
+   ),
+   home: ActivityScreen(0)
+  );
+ }
+}

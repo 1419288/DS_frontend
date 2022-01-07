@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
+  textfield_tags: ^1.4.2
   http: ^0.13.0
   intl: ^0.17.0
   flutter:

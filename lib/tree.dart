@@ -14,6 +14,7 @@ abstract class Activity {
   int duration;
   List<dynamic> children = List<dynamic>.empty(growable: true);
 
+
   // formerly List<dynamic>(); but now because of null safety it has to be
   // initialized like that
 

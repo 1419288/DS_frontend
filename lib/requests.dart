@@ -58,4 +58,19 @@ Future<void> stop(int id) async {
     print("statusCode=$response.statusCode");
     throw Exception('Failed to get children');
   }
+
+  
 }
+
+Future<void> addActivity(int id, String type, String name, List<String> tags) async {
+    //TODO CREAR EL PATH 
+    var uri = Uri.parse("$baseUrl/addActivity?$id&$type&$name");
+    final response = await client.get(uri);
+    if (response.statusCode == 200) {
+      print('SE HA CREADO LA ACTIVIDAD');
+    print("statusCode=$response.statusCode");
+  } else {
+    print("statusCode=$response.statusCode");
+    throw Exception('Failed to add activity');
+  }
+  }
